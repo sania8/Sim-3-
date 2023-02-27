@@ -4,76 +4,64 @@
     height: 500px;
 }
 
-#button{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
 
-/*styling the buttons*/
-#play-btn{
-  font-size: 20px;
-  padding:10px 26px;
-  text-align: center;
-  cursor: pointer;
-  display: inline-block;
-  border: 2px solid rgb(30,30,30);
-  text-decoration: none;
-  margin: 4px 2px;
-  border-radius: 5px;
-  color: rgb(50,50,50);
+#footer{
+  background-color:grey;
+  width:auto;
+  display:flex;
 }
-/*pause button styling*/
-#pause-btn{
-  font-size: 20px;
-  padding:10px 26px;
-  text-align: center;
-  cursor: pointer;
-  display: inline-block;
-  border: 2px solid rgb(30,30,30);
-  text-decoration: none;
-  margin: 4px 2px;
-  border-radius: 5px;
-  color: rgb(50,50,50);
-}
-
-/*reset button styling*/
-#reset-btn{
-  font-size: 20px;
-  padding:10px 26px;
-  text-align: center;
-  cursor: pointer;
-  display: inline-block;
-  border: 2px solid rgb(30,30,30);
-  text-decoration: none;
-  margin: 4px 2px;
-  border-radius: 5px;
-  color: rgb(50,50,50);
-}
-
-#download-btn{
-  font-size: 20px;
-  padding:10px 26px;
-  text-align: center;
-  cursor: pointer;
-  display: inline-block;
-  border: 2px solid rgb(30,30,30);
-  text-decoration: none;
-  margin: 4px 2px;
-  border-radius: 5px;
-  color: rgb(50,50,50);
-}
-
-#footer {
-  background-color: grey;
-  width: 95%;
-  height: 60px;
-  display: flex;
+#footer-content{
+  display:flex;
   justify-content: center;
 }
-/*styling the footer*/
-#footer-content {
-  width: 600px;
-  display: flex;
-  justify-content: center;
+#section1{
+  margin-right:3px;
+
 }
+#play-btn, #pause-btn, #reset-btn, #download-btn , #play1-btn, #pause1-btn, #reset1-btn, #download1-btn , #play2-btn , #pause2-btn, #reset2-btn, #download2-btn {
+  font-size: 3px;
+  padding: 0px 0px;
+  text-align: center;
+  cursor: pointer;
+  display: inline-block;
+  border: 0px solid rgb(30, 30, 30);
+  text-decoration: none;
+  margin: 0px 0px;
+  border-radius: 50%;
+  
+} 
+#styling{
+  display:flex;
+  justify-content:center;
+  
+}
+#styling1{
+  display:flex;
+  justify-content:center;
+  
+}
+#styling2{
+  display:flex;
+  justify-content:center;
+  
+}
+
+#mode{
+  margin-top:auto;
+  margin-bottom:auto;
+  display:flex;
+}
+#expect{
+  margin-top:auto;
+  margin-bottom:auto;
+  display:flex;
+}
+#det{
+  margin-top:auto;
+  margin-bottom:auto;
+  display:flex;
+}
+
+
+
+

@@ -2,29 +2,91 @@
 <html>
   <head>
     <link rel="stylesheet" type="text/css" href="style.css" />
-    <style>
-      #canvas {
-        background-color: black;
-        width: 1200px;
-        height: 500px;
-      }
-    </style>
   </head>
-  <div id="buttons">
-    
-  </div>
-  <canvas id="canvas"></canvas>
-  <footer id="footer">
-    <div id="footer-content">
-      <div id="buttons">
-        <button id="play-btn">Play</button>
-        <button id="pause-btn">Pause</button>
-        <button id="reset-btn">Reset</button>
-        <button id="download-btn">download</button>
-      </div>
+  <body>
+    <div id="buttons"></div>
+    <div class="container">
+      <div class="yellow-box"></div>
+      <div class="gun"></div>
+      <div class="projection"></div>
+      <div class="white-dots"></div>
     </div>
-  </footer>
+    <canvas id="canvas"></canvas>
+    <footer id="footer" style="width:96%;">
+      <div id="footer-content">
+        <div id="section1"  style="margin-left:50px;">
+          <div id="styling">
+          <p>Observed Pattern:</p>
+          <select id="mode">
+            <option value="first">Slit1</option>
+            <option value="second">Slit2</option>
+            <option value="third">Both Slits</option>
+          </select> 
+        </div>
+          <div id="buttons">
+            <button id="play-btn">
+              <img src="images/play.svg"  style="width:40px; height:40px; justify-content: center;"  >
+            </button>
+            <button id="pause-btn">
+              <img src="images/pause.svg"  style="width:40px; height:40px; justify-content: center;" >
+            </button>
+            <button id="reset-btn">
+              <img src="images/reset.svg" style="width:40px; height:40px; justify-content: center;" >
+            </button>
+            <button id="download-btn">
+              <img src="images/download.svg"  style="width:40px; height:40px; justify-content: center;" >
+            </button>
+          </div>
+        </div>
+        <div id="section2"  style="margin-left:300px">
+          <div id="styling1">
+          <p>Expected Pattern:</p>
+          <select id="expect">
+            <option value="single1">Slit1</option>
+            <option value="single2">Slit2</option>
+            <option value="double">Both Slits</option>
+          </select> 
+        </div>
+        <div id="buttons">
+          <button id="play1-btn">
+            <img src="images/play.svg"  style="width:40px; height:40px; justify-content: center;"  >
+          </button>
+          <button id="pause1-btn">
+            <img src="images/pause.svg"  style="width:40px; height:40px; justify-content: center;" >
+          </button>
+          <button id="reset1-btn">
+            <img src="images/reset.svg" style="width:40px; height:40px; justify-content: center;" >
+          </button>
+          <button id="download1-btn">
+            <img src="images/download.svg"  style="width:40px; height:40px; justify-content: center;" >
+          </button>
+        </div>
+        </div>
+        <div id="section3" style="margin-left:200px;">
+          <div id="styling2">
+            <p>Add Detectors</p>
+            <select id="det">
+              <option value="one">Single detector</option>
+              <option value="both">Both detectors</option>
+            </select>
+          </div>
+          <div id="buttons">
+          <button id="play2-btn">
+            <img src="images/play.svg"  style="width:40px; height:40px; justify-content: center;"  >
+          </button>
+          <button id="pause2-btn">
+            <img src="images/pause.svg"  style="width:40px; height:40px; justify-content: center;" >
+          </button>
+          <button id="reset2-btn">
+            <img src="images/reset.svg" style="width:40px; height:40px; justify-content: center;" >
+          </button>
+          <button id="download2-btn">
+            <img src="images/download.svg"  style="width:40px; height:40px; justify-content: center;" >
+          </button>
+        </div>
+      </div>
+    </footer>
   </body>
-   <script src="scr.js"></script> 
 
-  </html>
+  <script src="script.js"></script>
+</html>
