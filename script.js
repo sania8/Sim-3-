@@ -97,19 +97,44 @@ function detAnimation(){
   }
 
 ctx.fillStyle = "grey";
-ctx.fillRect(245, 180, 20, 10);
-ctx.fillRect(245, 240, 20, 10);
+ctx.fillRect(245, 175, 10, 20);
+ctx.fillRect(245, 235, 10, 20);
 ctx.fillStyle="white";
 ctx.fillRect(canvas.width*0.3, 0, 5, canvas.height);
 ctx.fillStyle = "black";
 ctx.fillRect(206, 180, 18, 3);
 ctx.fillStyle = "black";
 ctx.fillRect(206, 240, 18, 3);
-if (isPlaying) {
-  animationId = requestAnimationFrame(detAnimation);
-}
+}//close of the diffraction pattern2 due to single slit
 
+//code for running simulation with single detector
+function detAnimation1(){
   
+  let x1;
+  x1 = canvas.height*0.37+(randomGaussian()/3)*canvas.height*0.02 ;
+  for (let i = 0; i < 1; i++) {
+      const y = Math.random() * canvas.width+0.30*canvas.width;
+      ctx.fillStyle = `rgb(255,255,255)`;
+      ctx.fillRect(y,x1 + i,1,1);
+    
+  }
+  x1 = canvas.height*0.49+(randomGaussian()/3)*canvas.height*0.02;
+  for (let i = 0; i < 1; i++) {
+      const y = Math.random() * canvas.width+0.30*canvas.width;
+      ctx.fillStyle = `rgb(255,255,255)`;
+      ctx.fillRect( y, x1 + i,1, 1);
+    
+  }
+
+ctx.fillStyle = "grey";
+ctx.fillRect(245, 175, 10, 20);
+ctx.fillStyle="white";
+ctx.fillRect(canvas.width*0.3, 0, 5, canvas.height);
+ctx.fillStyle = "black";
+ctx.fillRect(206, 180, 18, 3);
+ctx.fillStyle = "black";
+ctx.fillRect(206, 240, 18, 3);
+
 }//close of the diffraction pattern2 due to single slit
 //connection 
 //CODE 3
@@ -118,7 +143,7 @@ function detAnimate() {
   let pattern;
   
   if (det === "one") {
-    pattern = animation();
+    pattern = detAnimation1();
   }
   else if (det === "both"){
     pattern = detAnimation();
@@ -126,7 +151,6 @@ function detAnimate() {
   if (isPlaying) {
     animationId = requestAnimationFrame(detAnimate);
   }
-
 }
 
 function onDetChange() {
@@ -272,7 +296,7 @@ const playButton2 = document.getElementById("play2-btn");
 playButton2.addEventListener("click", function() {
     if (!isPlaying) {
       isPlaying = true;
-      detAnimation();
+      detAnimate();
 
     }
 });
