@@ -1,18 +1,203 @@
 #canvas {
     background-color: black;
-    width: 1200px;
-    height: 500px;
+    width: 100%;
+    height:  50vh;
+    max-width : 100%;
+    margin-top : -160px;
+    
 }
 
-#footer{
-  background-color:grey;
-  width:100%;
-  display:flex;
+.body
+{
+ 
+
+  margin-top : -10px;
 }
+
+
+#footer
+{
+  background-color:rgba(0,0,0);
+  width:100%;
+  height: 40vh;
+  display:flex;
+  position : relative;
+  margin: 0;
+  padding: 0;
+}
+
+
+.textp
+{
+  font-size: 1.5vw;
+  color: white;
+  position:relative;
+  top: 12.5vh;
+  left: 13vw;
+ 
+  width: fit-content;
+
+}
+
+
+
+.textq
+{
+  font-size: 1.5vw;
+  color: white;
+  position:relative;
+  top: 15vh;
+  left: 13vw;
+  width : fit-content;
+
+}
+.textr
+{
+  font-size: 1.5vw;
+  color: white;
+  position:relative;
+  top:-9vh;
+  left: 33vw;
+  width : fit-content;
+
+}
+.texts
+{
+  font-size: 1.2em;
+  
+  position:relative;
+  top:6vh;
+  font-weight : bold;
+  left: 3.2vw;
+  color : rgba(0, 0, 0, 0.758);
+  font-weight : 3em;
+  width : fit-content;
+
+}
+.textu
+{
+  font-size: 1.5vw;
+  
+  position:relative;
+  top:5vh;
+  left: 3.9vw;
+  color : white;
+  font-weight : 3em;
+  width : fit-content;
+
+}
+
+.textt
+{
+  font-size: 1.5vw;
+  
+  position:relative;
+  top:14vh;
+  left: 15vw;
+  color : white;
+  width : fit-content;
+  font-weight : 3em;
+
+}
+#image{
+  color : white;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color : red;
+  white-space : nowrap;
+  display: inline-block;
+  width : fit-content;
+  padding: relative;
+  margin : 0;
+  padding : 0 ;
+  height : 80px;
+}
+
+
+.design{
+  display: flex;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+#image2{
+  color : white;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color : red;
+  white-space : nowrap;
+  display: inline-block;
+  width : fit-content;
+  padding: relative;
+  margin : 0;
+  padding : 0 ;
+  height : 80px;
+}
+#image3{
+  color : white;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color : red;
+  white-space : nowrap;
+  display: inline-block;
+  width : fit-content;
+  padding: relative;
+  margin : 0;
+  padding : 0 ;
+  height : 80px;
+}
+
+#image4{
+  color : white;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color : red;
+  white-space : nowrap;
+  display: inline-block;
+  width : fit-content;
+  padding: relative;
+  margin : 0;
+  padding : 0 ;
+  height : 80px;
+}
+
+
+#text1{
+  display:flex;
+  margin-top:5px;
+  color:white;
+  
+}
+#text2{
+  display:flex;
+  margin-top:5px;
+  color:white;
+  margin-left: 5px;
+  
+}
+#content {
+  position: relative;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  overflow-y: scroll; /* allows scrolling within the content */
+}
+
 #footer-content {
   display: flex;
   justify-content: center;
   width: 100%;
+  justify-content: space-between;
+  margin-top: 130px; /* Add margin-top property */
+  margin-left: -30px;
+  white-space : nowrap;
+
 }
 
 @media only screen and (max-width: 1000px) {
@@ -34,6 +219,9 @@
   text-decoration: none;
   margin: 0px 0px;
   border-radius: 50%;
+  
+  justify-content: center;
+  align-items: center;
   
 } 
 #styling{
@@ -72,4 +260,6 @@
     max-width: 100%;
   }
 }
-
+.style{
+  color : white;
+}
